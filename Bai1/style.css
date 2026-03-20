@@ -1,0 +1,51 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  display: flex;
+  width: 43%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h2 {
+  padding: 20px;
+}
+
+.icon {
+  display: flex;
+}
+
+.img {
+  width: 100%;
+  padding: 20px;
+}
+
+.item-content {
+  width: 100%;
+  padding: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#btn-light {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+#btn-light:hover {
+  cursor: pointer;
+}
+
+.content {
+  border: 1px #1d1d1d solid;
+  width: 43%;
+  border-radius: 20px;
+}
