@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced Theme Switcher</title>
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "dark") {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          // Hoặc dùng cách cũ của bạn:
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -37,5 +47,6 @@
         nguy cơ mất việc làm ở một số ngành truyền thống.
       </p>
     </div>
+     <script src="script.js" defer></script>
   </body>
 </html>
